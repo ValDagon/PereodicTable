@@ -21,7 +21,26 @@ namespace Pereodic_Table
 
         private void CommonBtn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("work");
+            string fileName = "files/text/" + (sender as Button).Name + ".txt";
+
+            try
+            {
+                StreamReader streamReader = new StreamReader(fileName); //Открываем файл для чтения
+
+                string str = ""; //Объявляем переменную, в которую будем записывать текст из файла
+
+                while (!streamReader.EndOfStream) //Цикл длиться пока не будет достигнут конец файла
+                {
+                    str += streamReader.ReadLine(); //В переменную str по строчно записываем содержимое файла
+                }
+
+                MessageBox.Show(str);
+            }
+            catch
+            {
+                MessageBox.Show("Ошибка! Файл ещё не создан!");
+            }
+
         }
 
 
