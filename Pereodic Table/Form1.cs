@@ -24,7 +24,7 @@ namespace Pereodic_Table
             string fileName = "files/text/" + (sender as Button).Name + ".txt";
             string titleName = (sender as Button).Name;
 
-            try
+            try //Обрабатываем возможные ошибки
             {
                 StreamReader streamReader = new StreamReader(fileName); //Открываем файл для чтения
 
