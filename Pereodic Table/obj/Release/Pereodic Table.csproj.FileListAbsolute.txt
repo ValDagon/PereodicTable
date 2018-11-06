@@ -1,0 +1,9 @@
+D:\Программирование\Проекты\Pereodic Table\Pereodic Table\bin\Release\Pereodic Table.exe
+D:\Программирование\Проекты\Pereodic Table\Pereodic Table\bin\Release\Pereodic Table.pdb
+D:\Программирование\Проекты\Pereodic Table\Pereodic Table\obj\Release\Pereodic Table.csprojAssemblyReference.cache
+D:\Программирование\Проекты\Pereodic Table\Pereodic Table\obj\Release\Pereodic_Table.Properties.Resources.resources
+D:\Программирование\Проекты\Pereodic Table\Pereodic Table\obj\Release\Pereodic Table.csproj.GenerateResource.cache
+D:\Программирование\Проекты\Pereodic Table\Pereodic Table\obj\Release\Pereodic Table.csproj.CoreCompileInputs.cache
+D:\Программирование\Проекты\Pereodic Table\Pereodic Table\obj\Release\Pereodic Table.exe
+D:\Программирование\Проекты\Pereodic Table\Pereodic Table\obj\Release\Pereodic Table.pdb
+D:\Программирование\Проекты\Pereodic Table\Pereodic Table\obj\Release\Pereodic_Table.Form1.resources
