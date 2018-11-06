@@ -19,10 +19,23 @@ namespace Pereodic_Table
             InitializeComponent();
         }
 
+        private void CommonBtn_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("work");
+        }
+
+
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            foreach (var item in this.Controls) //обходим все элементы формы
+            {
+                if (item is Button) // проверяем, что это кнопка
+                {
+                    ((Button)item).Click += CommonBtn_Click; //приводим к типу и устанавливаем обработчик события  
+                }
+            }
         }
+                     
 
     }
 }
