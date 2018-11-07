@@ -21,26 +21,6 @@ namespace Pereodic_Table
 
         private void CommonBtn_Click(object sender, EventArgs e)
         {
-            string fileName = "files/text/" + (sender as Button).Name + ".txt";
-            string titleName = (sender as Button).Name;
-
-            try //Обрабатываем возможные ошибки
-            {
-                StreamReader streamReader = new StreamReader(fileName); //Открываем файл для чтения
-
-                string str = ""; //Объявляем переменную, в которую будем записывать текст из файла
-
-                while (!streamReader.EndOfStream) //Цикл длиться пока не будет достигнут конец файла
-                {
-                    str += streamReader.ReadLine(); //В переменную str по строчно записываем содержимое файла
-                }
-
-                MessageBox.Show(str, titleName);
-            }
-            catch
-            {
-                MessageBox.Show("Файл ещё не создан!", "Ошибка");
-            }
 
         }
 
@@ -56,6 +36,29 @@ namespace Pereodic_Table
             }
         }
                      
+        private void OnMouseEnter(object sender, EventArgs e)
+        {
+            (sender as Button).BackColor = SystemColors.ButtonHighlight;
+        }
 
+        private void OnMouseLeave1(object sender, EventArgs e)
+        {
+            (sender as Button).BackColor = Color.PaleVioletRed;
+        }
+
+        private void OnMouseLeave2(object sender, EventArgs e)
+        {
+            (sender as Button).BackColor = Color.Orange;
+        }
+
+        private void OnMouseLeave3(object sender, EventArgs e)
+        {
+            (sender as Button).BackColor = Color.RoyalBlue;
+        }
+
+        private void OnMouseLeave4(object sender, EventArgs e)
+        {
+            (sender as Button).BackColor = Color.ForestGreen;
+        }
     }
 }
