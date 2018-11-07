@@ -41,7 +41,6 @@ namespace Pereodic_Table
             {
                 MessageBox.Show("Файл ещё не создан!", "Ошибка");
             }
-
         }
 
 
@@ -56,6 +55,29 @@ namespace Pereodic_Table
             }
         }
                      
+        private void OnMouseEnter(object sender, EventArgs e)
+        {
+            (sender as Button).BackColor = SystemColors.ButtonHighlight;
+        }
 
+        private void OnMouseLeave1(object sender, EventArgs e)
+        {
+            (sender as Button).BackColor = Color.PaleVioletRed;
+        }
+
+        private void OnMouseLeave2(object sender, EventArgs e)
+        {
+            (sender as Button).BackColor = Color.Orange;
+        }
+
+        private void OnMouseLeave3(object sender, EventArgs e)
+        {
+            (sender as Button).BackColor = Color.RoyalBlue;
+        }
+
+        private void OnMouseLeave4(object sender, EventArgs e)
+        {
+            (sender as Button).BackColor = Color.ForestGreen;
+        }
     }
 }
