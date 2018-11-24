@@ -96,10 +96,10 @@
             this.button30 = new System.Windows.Forms.Button();
             this.button31 = new System.Windows.Forms.Button();
             this.button32 = new System.Windows.Forms.Button();
-            this.button33 = new System.Windows.Forms.Button();
-            this.button34 = new System.Windows.Forms.Button();
-            this.button35 = new System.Windows.Forms.Button();
-            this.button36 = new System.Windows.Forms.Button();
+            this.Hf = new System.Windows.Forms.Button();
+            this.La = new System.Windows.Forms.Button();
+            this.Ba = new System.Windows.Forms.Button();
+            this.Cs = new System.Windows.Forms.Button();
             this.button37 = new System.Windows.Forms.Button();
             this.button38 = new System.Windows.Forms.Button();
             this.button39 = new System.Windows.Forms.Button();
@@ -927,53 +927,53 @@
             this.button32.MouseEnter += new System.EventHandler(this.OnMouseEnter);
             this.button32.MouseLeave += new System.EventHandler(this.OnMouseLeave3);
             // 
-            // button33
+            // Hf
             // 
-            this.button33.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button33.Location = new System.Drawing.Point(476, 478);
-            this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(119, 60);
-            this.button33.TabIndex = 58;
-            this.button33.Text = "Hf\r\n178,49\r\nГафний";
-            this.button33.UseVisualStyleBackColor = false;
-            this.button33.MouseEnter += new System.EventHandler(this.OnMouseEnter);
-            this.button33.MouseLeave += new System.EventHandler(this.OnMouseLeave3);
+            this.Hf.BackColor = System.Drawing.Color.RoyalBlue;
+            this.Hf.Location = new System.Drawing.Point(476, 478);
+            this.Hf.Name = "Hf";
+            this.Hf.Size = new System.Drawing.Size(119, 60);
+            this.Hf.TabIndex = 58;
+            this.Hf.Text = "Hf\r\n178,49\r\nГафний";
+            this.Hf.UseVisualStyleBackColor = false;
+            this.Hf.MouseEnter += new System.EventHandler(this.OnMouseEnter);
+            this.Hf.MouseLeave += new System.EventHandler(this.OnMouseLeave3);
             // 
-            // button34
+            // La
             // 
-            this.button34.BackColor = System.Drawing.Color.ForestGreen;
-            this.button34.Location = new System.Drawing.Point(357, 478);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(120, 60);
-            this.button34.TabIndex = 57;
-            this.button34.Text = "La*\r\n138,81\r\nЛантан\r\n";
-            this.button34.UseVisualStyleBackColor = false;
-            this.button34.MouseEnter += new System.EventHandler(this.OnMouseEnter);
-            this.button34.MouseLeave += new System.EventHandler(this.OnMouseLeave4);
+            this.La.BackColor = System.Drawing.Color.ForestGreen;
+            this.La.Location = new System.Drawing.Point(357, 478);
+            this.La.Name = "La";
+            this.La.Size = new System.Drawing.Size(120, 60);
+            this.La.TabIndex = 57;
+            this.La.Text = "La*\r\n138,81\r\nЛантан\r\n";
+            this.La.UseVisualStyleBackColor = false;
+            this.La.MouseEnter += new System.EventHandler(this.OnMouseEnter);
+            this.La.MouseLeave += new System.EventHandler(this.OnMouseLeave4);
             // 
-            // button35
+            // Ba
             // 
-            this.button35.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.button35.Location = new System.Drawing.Point(239, 478);
-            this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(119, 60);
-            this.button35.TabIndex = 56;
-            this.button35.Text = "Ba\r\n137,34\r\nБарий";
-            this.button35.UseVisualStyleBackColor = false;
-            this.button35.MouseEnter += new System.EventHandler(this.OnMouseEnter);
-            this.button35.MouseLeave += new System.EventHandler(this.OnMouseLeave1);
+            this.Ba.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.Ba.Location = new System.Drawing.Point(239, 478);
+            this.Ba.Name = "Ba";
+            this.Ba.Size = new System.Drawing.Size(119, 60);
+            this.Ba.TabIndex = 56;
+            this.Ba.Text = "Ba\r\n137,34\r\nБарий";
+            this.Ba.UseVisualStyleBackColor = false;
+            this.Ba.MouseEnter += new System.EventHandler(this.OnMouseEnter);
+            this.Ba.MouseLeave += new System.EventHandler(this.OnMouseLeave1);
             // 
-            // button36
+            // Cs
             // 
-            this.button36.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.button36.Location = new System.Drawing.Point(120, 478);
-            this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(120, 60);
-            this.button36.TabIndex = 55;
-            this.button36.Text = "Cs\r\n132,905\r\nЦезий";
-            this.button36.UseVisualStyleBackColor = false;
-            this.button36.MouseEnter += new System.EventHandler(this.OnMouseEnter);
-            this.button36.MouseLeave += new System.EventHandler(this.OnMouseLeave1);
+            this.Cs.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.Cs.Location = new System.Drawing.Point(120, 478);
+            this.Cs.Name = "Cs";
+            this.Cs.Size = new System.Drawing.Size(120, 60);
+            this.Cs.TabIndex = 55;
+            this.Cs.Text = "Cs\r\n132,905\r\nЦезий";
+            this.Cs.UseVisualStyleBackColor = false;
+            this.Cs.MouseEnter += new System.EventHandler(this.OnMouseEnter);
+            this.Cs.MouseLeave += new System.EventHandler(this.OnMouseLeave1);
             // 
             // button37
             // 
@@ -1112,10 +1112,10 @@
             this.Controls.Add(this.button30);
             this.Controls.Add(this.button31);
             this.Controls.Add(this.button32);
-            this.Controls.Add(this.button33);
-            this.Controls.Add(this.button34);
-            this.Controls.Add(this.button35);
-            this.Controls.Add(this.button36);
+            this.Controls.Add(this.Hf);
+            this.Controls.Add(this.La);
+            this.Controls.Add(this.Ba);
+            this.Controls.Add(this.Cs);
             this.Controls.Add(this.Pd);
             this.Controls.Add(this.Rh);
             this.Controls.Add(this.Xe);
@@ -1247,10 +1247,10 @@
         private System.Windows.Forms.Button button30;
         private System.Windows.Forms.Button button31;
         private System.Windows.Forms.Button button32;
-        private System.Windows.Forms.Button button33;
-        private System.Windows.Forms.Button button34;
-        private System.Windows.Forms.Button button35;
-        private System.Windows.Forms.Button button36;
+        private System.Windows.Forms.Button Hf;
+        private System.Windows.Forms.Button La;
+        private System.Windows.Forms.Button Ba;
+        private System.Windows.Forms.Button Cs;
         private System.Windows.Forms.Button button37;
         private System.Windows.Forms.Button button38;
         private System.Windows.Forms.Button button39;

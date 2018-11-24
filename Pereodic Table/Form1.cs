@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using System.IO;
-using System.Threading.Tasks;
 
 
 namespace Pereodic_Table
@@ -19,7 +13,7 @@ namespace Pereodic_Table
             InitializeComponent();
         }
 
-        private void CommonBtn_Click(object sender, EventArgs e)
+        public void CommonBtn_Click(object sender, EventArgs e)
         {
             string fileName = "files/text/" + (sender as Button).Name + ".txt";
             string titleName = (sender as Button).Name;
@@ -28,14 +22,16 @@ namespace Pereodic_Table
             {
                 StreamReader streamReader = new StreamReader(fileName); //Открываем файл для чтения
 
-                string str = ""; //Объявляем переменную, в которую будем записывать текст из файла
+                string str = "";
 
                 while (!streamReader.EndOfStream) //Цикл длиться пока не будет достигнут конец файла
                 {
                     str += streamReader.ReadLine(); //В переменную str по строчно записываем содержимое файла
                 }
 
-                MessageBox.Show(str, titleName);
+                Form2 f2 = new Form2(str, titleName);
+                f2.Show();
+
             }
             catch
             {
@@ -81,3 +77,5 @@ namespace Pereodic_Table
         }
     }
 }
+
+
