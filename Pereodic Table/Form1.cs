@@ -35,7 +35,13 @@ namespace Pereodic_Table
             }
             catch
             {
-                MessageBox.Show("Файл ещё не создан!", "Ошибка");
+                MessageBox.Show(
+                    "Информация об элементе ещё не добавлена",
+                    "Ошибка",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information,
+                    MessageBoxDefaultButton.Button1,
+                    MessageBoxOptions.DefaultDesktopOnly);
             }
         }
 
