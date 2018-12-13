@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.H = new System.Windows.Forms.Button();
             this.Li = new System.Windows.Forms.Button();
             this.He = new System.Windows.Forms.Button();
@@ -1170,6 +1171,7 @@
             this.Controls.Add(this.He);
             this.Controls.Add(this.Li);
             this.Controls.Add(this.H);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Pereodic Table";
             this.Load += new System.EventHandler(this.Form1_Load);
