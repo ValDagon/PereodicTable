@@ -1,2 +1,2 @@
-# Periodic Table
-This application is created to help students studying chemistry.
+# Периодическая Таблица
+Это приложение создавалось для помощи студентам изучающим химию.
