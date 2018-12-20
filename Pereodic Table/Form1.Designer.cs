@@ -1089,7 +1089,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Pereodic_Table.Properties.Resources.f;
-            this.ClientSize = new System.Drawing.Size(1313, 751);
+            this.ClientSize = new System.Drawing.Size(1313, 658);
             this.Controls.Add(this.button37);
             this.Controls.Add(this.button38);
             this.Controls.Add(this.button39);

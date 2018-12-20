@@ -11,11 +11,12 @@ namespace Pereodic_Table
         public Form1()
         {
             InitializeComponent();
+            MaximizeBox = false;
         }
 
         public void CommonBtn_Click(object sender, EventArgs e)
         {
-            string fileName = "files/text/" + (sender as Button).Name + ".txt";
+            string fileName = Application.StartupPath + @"\files\text\" + (sender as Button).Name + ".html";
             string titleName = (sender as Button).Name;
 
             try //Обрабатываем возможные ошибки
@@ -29,7 +30,7 @@ namespace Pereodic_Table
                     str += streamReader.ReadLine(); //В переменную str по строчно записываем содержимое файла
                 }
 
-                Form2 f2 = new Form2(str, titleName);
+                Form2 f2 = new Form2(str, titleName, fileName);
                 f2.Show();
 
             }

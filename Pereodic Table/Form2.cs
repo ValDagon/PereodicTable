@@ -6,11 +6,11 @@ namespace Pereodic_Table
     public partial class Form2 : Form
     {
 
-        public Form2(string text, string title)
+        public Form2(string text, string title, string fileName)
         {
             InitializeComponent();
             this.Text = "Информация об элементе: " + title;
-            infoLabel.Text = text;
+            webBrowser1.Navigate(fileName);
         }
 
         private void infoLabel_Click(object sender, EventArgs e)
@@ -22,5 +22,6 @@ namespace Pereodic_Table
         {
 
         }
+
     }
 }

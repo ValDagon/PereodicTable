@@ -1,0 +1,4 @@
+﻿*.rar
+bin/
+*.exe
+obj/
