@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.infoLabel = new System.Windows.Forms.Label();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.closeInfoBtn = new System.Windows.Forms.Button();
+            this.showVideoBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // infoLabel
@@ -46,19 +48,42 @@
             // 
             // webBrowser1
             // 
-            this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.webBrowser1.Location = new System.Drawing.Point(0, 0);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(817, 573);
+            this.webBrowser1.Size = new System.Drawing.Size(817, 556);
             this.webBrowser1.TabIndex = 1;
+            // 
+            // closeInfoBtn
+            // 
+            this.closeInfoBtn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.closeInfoBtn.Location = new System.Drawing.Point(12, 569);
+            this.closeInfoBtn.Name = "closeInfoBtn";
+            this.closeInfoBtn.Size = new System.Drawing.Size(382, 32);
+            this.closeInfoBtn.TabIndex = 2;
+            this.closeInfoBtn.Text = "Закрыть информацию";
+            this.closeInfoBtn.UseVisualStyleBackColor = true;
+            this.closeInfoBtn.Click += new System.EventHandler(this.closeInfoBtn_Click);
+            // 
+            // showVideoBtn
+            // 
+            this.showVideoBtn.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.showVideoBtn.Location = new System.Drawing.Point(400, 569);
+            this.showVideoBtn.Name = "showVideoBtn";
+            this.showVideoBtn.Size = new System.Drawing.Size(405, 32);
+            this.showVideoBtn.TabIndex = 3;
+            this.showVideoBtn.Text = "Посмотреть видео об элементе";
+            this.showVideoBtn.UseVisualStyleBackColor = true;
+            this.showVideoBtn.Click += new System.EventHandler(this.showVideoBtn_Click);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.ClientSize = new System.Drawing.Size(817, 573);
+            this.ClientSize = new System.Drawing.Size(817, 604);
+            this.Controls.Add(this.showVideoBtn);
+            this.Controls.Add(this.closeInfoBtn);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.infoLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -74,5 +99,7 @@
 
         private System.Windows.Forms.Label infoLabel;
         private System.Windows.Forms.WebBrowser webBrowser1;
+        private System.Windows.Forms.Button closeInfoBtn;
+        private System.Windows.Forms.Button showVideoBtn;
     }
 }

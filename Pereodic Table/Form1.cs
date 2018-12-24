@@ -3,7 +3,6 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.IO;
 
-
 namespace Pereodic_Table
 {
     public partial class Form1 : Form
@@ -17,6 +16,7 @@ namespace Pereodic_Table
         public void CommonBtn_Click(object sender, EventArgs e)
         {
             string fileName = Application.StartupPath + @"\files\text\" + (sender as Button).Name + ".html";
+            string videoName = Application.StartupPath + @"\files\video\" + (sender as Button).Name + ".wmv";
             string titleName = (sender as Button).Name;
 
             try //Обрабатываем возможные ошибки
@@ -29,8 +29,7 @@ namespace Pereodic_Table
                 {
                     str += streamReader.ReadLine(); //В переменную str по строчно записываем содержимое файла
                 }
-
-                Form2 f2 = new Form2(str, titleName, fileName);
+                Form2 f2 = new Form2(str, titleName, fileName, videoName);
                 f2.Show();
 
             }
