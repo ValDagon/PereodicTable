@@ -1171,6 +1171,7 @@
             this.Controls.Add(this.He);
             this.Controls.Add(this.Li);
             this.Controls.Add(this.H);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Pereodic Table";

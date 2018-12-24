@@ -33,6 +33,8 @@
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.closeInfoBtn = new System.Windows.Forms.Button();
             this.showVideoBtn = new System.Windows.Forms.Button();
+            this.moreVideoBtn1 = new System.Windows.Forms.Button();
+            this.moreVideoBtn2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // infoLabel
@@ -76,16 +78,39 @@
             this.showVideoBtn.UseVisualStyleBackColor = true;
             this.showVideoBtn.Click += new System.EventHandler(this.showVideoBtn_Click);
             // 
+            // moreVideoBtn1
+            // 
+            this.moreVideoBtn1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.moreVideoBtn1.Location = new System.Drawing.Point(12, 607);
+            this.moreVideoBtn1.Name = "moreVideoBtn1";
+            this.moreVideoBtn1.Size = new System.Drawing.Size(382, 32);
+            this.moreVideoBtn1.TabIndex = 4;
+            this.moreVideoBtn1.UseVisualStyleBackColor = true;
+            this.moreVideoBtn1.Click += new System.EventHandler(this.moreVideoBtn1_Click);
+            // 
+            // moreVideoBtn2
+            // 
+            this.moreVideoBtn2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.moreVideoBtn2.Location = new System.Drawing.Point(400, 607);
+            this.moreVideoBtn2.Name = "moreVideoBtn2";
+            this.moreVideoBtn2.Size = new System.Drawing.Size(405, 32);
+            this.moreVideoBtn2.TabIndex = 5;
+            this.moreVideoBtn2.UseVisualStyleBackColor = true;
+            this.moreVideoBtn2.Click += new System.EventHandler(this.moreVideoBtn2_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.ClientSize = new System.Drawing.Size(817, 604);
+            this.ClientSize = new System.Drawing.Size(817, 641);
+            this.Controls.Add(this.moreVideoBtn2);
+            this.Controls.Add(this.moreVideoBtn1);
             this.Controls.Add(this.showVideoBtn);
             this.Controls.Add(this.closeInfoBtn);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.infoLabel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
             this.Text = "Информация об элементе";
@@ -101,5 +126,7 @@
         private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.Button closeInfoBtn;
         private System.Windows.Forms.Button showVideoBtn;
+        private System.Windows.Forms.Button moreVideoBtn1;
+        private System.Windows.Forms.Button moreVideoBtn2;
     }
 }

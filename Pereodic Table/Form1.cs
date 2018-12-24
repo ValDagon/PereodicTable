@@ -31,7 +31,6 @@ namespace Pereodic_Table
                 }
                 Form2 f2 = new Form2(str, titleName, fileName, videoName);
                 f2.Show();
-
             }
             catch
             {

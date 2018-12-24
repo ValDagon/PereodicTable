@@ -1,4 +1,6 @@
-﻿*.rar
+﻿*.avi
+*.wmv
+*.rar
 bin/
 *.exe
 obj/
