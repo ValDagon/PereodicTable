@@ -27,101 +27,109 @@ namespace Pereodic_Table
                 moreVideoBtn1.Text = "Возгонка йода";
                 Controls.Remove(moreVideoBtn2);
             }
-            if (btnName == "Fe")
+            else if (btnName == "Fe")
             {
                 moreVideoBtn1.Text = "Гидроксид железа II";
                 Controls.Remove(moreVideoBtn2);
             }
-            if (btnName == "Co")
+            else if (btnName == "Co")
             {
                 showVideoBtn.Text = "Гидроксид кобальта II";
                 Controls.Remove(moreVideoBtn1);
                 Controls.Remove(moreVideoBtn2);
             }
-            if (btnName == "Mn")
+            else if (btnName == "Mn")
             {
                 showVideoBtn.Text = "Гидроксид марганца";
                 moreVideoBtn1.Text = "Окислительные свойства диоксида марганца";
                 Controls.Remove(moreVideoBtn2);
             }
-            if (btnName == "Ni")
+            else if (btnName == "Ni")
             {
                 showVideoBtn.Text = "Гидроксид никеля";
                 Controls.Remove(moreVideoBtn1);
                 Controls.Remove(moreVideoBtn2);
             }
-            if (btnName == "P")
+            else if (btnName == "P")
             {
                 showVideoBtn.Text = "Горение фосфора";
                 Controls.Remove(moreVideoBtn1);
                 Controls.Remove(moreVideoBtn2);
             }
-            if (btnName == "Cu")
+            else if (btnName == "Cu")
             {
                 moreVideoBtn1.Text = "Обнаружение меди";
                 moreVideoBtn2.Text = "Сульфат меди";
             }
-            if (btnName == "Br")
+            else if (btnName == "Br")
             {
                 showVideoBtn.Text = "Получение брома";
                 Controls.Remove(moreVideoBtn1);
                 Controls.Remove(moreVideoBtn2);
             }
-            if (btnName == "Cl")
+            else if (btnName == "Cl")
             {
                 showVideoBtn.Text = "Получение хлора";
                 Controls.Remove(moreVideoBtn1);
                 Controls.Remove(moreVideoBtn2);
             }
-            if (btnName == "Ag")
+            else if (btnName == "Ag")
             {
                 Controls.Remove(moreVideoBtn1);
                 Controls.Remove(moreVideoBtn2);
             }
-            if (btnName == "Ba")
+            else if (btnName == "Ba")
             {
                 Controls.Remove(moreVideoBtn1);
                 Controls.Remove(moreVideoBtn2);
             }
-            if (btnName == "Ca")
+            else if (btnName == "Ca")
             {
                 Controls.Remove(moreVideoBtn1);
                 Controls.Remove(moreVideoBtn2);
             }
-            if (btnName == "Cd")
+            else if (btnName == "Cd")
             {
                 Controls.Remove(moreVideoBtn1);
                 Controls.Remove(moreVideoBtn2);
             }
-            if (btnName == "K")
+            else if (btnName == "K")
             {
                 Controls.Remove(moreVideoBtn1);
                 Controls.Remove(moreVideoBtn2);
             }
-            if (btnName == "Li")
+            else if (btnName == "Li")
             {
                 Controls.Remove(moreVideoBtn1);
                 Controls.Remove(moreVideoBtn2);
             }
-            if (btnName == "Mg")
+            else if (btnName == "Mg")
             {
                 Controls.Remove(moreVideoBtn1);
                 Controls.Remove(moreVideoBtn2);
             }
-            if (btnName == "Na")
+            else if (btnName == "Na")
             {
                 Controls.Remove(moreVideoBtn1);
                 Controls.Remove(moreVideoBtn2);
             }
-            if (btnName == "Sr")
+            else if (btnName == "Sr")
             {
                 Controls.Remove(moreVideoBtn1);
                 Controls.Remove(moreVideoBtn2);
             }
-            if (btnName == "Zn")
+            else if (btnName == "Zn")
             {
                 Controls.Remove(moreVideoBtn1);
                 Controls.Remove(moreVideoBtn2);
+            }
+            else
+            {
+                Controls.Remove(showVideoBtn);
+                Controls.Remove(moreVideoBtn1);
+                Controls.Remove(moreVideoBtn2);
+                closeInfoBtn.Width = 785;
+                this.Height = 635;
             }
         }
 
